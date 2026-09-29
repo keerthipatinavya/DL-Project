@@ -1,0 +1,16 @@
+.git
+.venv
+__pycache__
+*.pyc
+requirements.txt
+api/
+backend/
+ml/
+data/
+tests/
+scripts/
+node_modules
+frontend/node_modules
+models_saved/
+uploads/
+.DS_Store
