@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Upload, Play, AlertTriangle, CheckCircle, RefreshCw, Eye, Sparkles, Video } from 'lucide-react';
-import { uploadVideo, startVideoAnalysis, getAnalysisStatus, getAnalysisResults } from '../services/api';
+import { uploadVideo, startVideoAnalysis, getAnalysisStatus, getAnalysisResults, getMediaUrl } from '../services/api';
 
 interface VideoAnalysisPageProps {
   setActiveTab: (tab: string) => void;
@@ -297,7 +297,7 @@ export const VideoAnalysisPage: React.FC<VideoAnalysisPageProps> = ({ setActiveT
             {videoMeta?.file_path ? (
               <video
                 ref={videoRef}
-                src={`http://localhost:8000${videoMeta.file_path}`}
+                src={getMediaUrl(videoMeta.file_path)}
                 controls
                 onPlay={() => setIsPlaying(true)}
                 onPause={() => setIsPlaying(false)}

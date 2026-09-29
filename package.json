@@ -1,0 +1,21 @@
+{
+  "name": "badminton-dl-project",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Deep Learning Based Badminton Rally & Shot Outcome Prediction System",
+  "scripts": {
+    "dev": "npm --prefix frontend run dev",
+    "build": "npm --prefix frontend run build",
+    "preview": "npm --prefix frontend run preview",
+    "lint": "npm --prefix frontend run lint",
+    "start": "npm --prefix frontend run preview",
+    "install:all": "cd frontend && npm install"
+  },
+  "keywords": [
+    "badminton",
+    "deep-learning",
+    "pytorch",
+    "computer-vision",
+    "spatiotemporal"
+  ]
+}

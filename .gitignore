@@ -1,1 +1,28 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+.venv/
+env/
+venv/
+
+# Build artifacts
+frontend/dist/
+dist/
+build/
+
+# Deployment & IDE
 .vercel
+.vscode/
+.idea/
+.DS_Store
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
